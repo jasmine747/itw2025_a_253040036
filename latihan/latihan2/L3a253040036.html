@@ -6,33 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <table style="border-collapse: collapse;" widht="30%" cellspacing="10" cellpadding="15" border="1">
-        <tr><th bgcolor="gray" colspan="6">INPUT DATA MAHASISWA</th></tr>
-        <tr><td>Username</td><td>:</td>
+    <table style="border-collapse: collapse;" widht="30%" cellspacing="10" cellpadding="15" border="5">
+        <tr><th bgcolor="gray" colspan="6" style="border: 3px solid black;">INPUT DATA MAHASISWA</th></tr>
+        <tr style="border: 3px solid black;"><td>Username</td><td style="border: 3px solid black;">:</td>
             <td>
                 <form>
                     <input type="text" name="Username">
                 </form>
             </td></tr>
-        <tr><td>Password</td><td>:</td>
+        <tr style="border: 3px solid black;"><td>Password</td><td style="border: 3px solid black;">:</td>
             <td>
                 <form>
-                    <input type="text" name="Password">
+                    <input type="password" name="Username">
                 </form>
             </td></tr> 
-        <tr><td>Fullname</td><td>:</td>
+        <tr style="border: 3px solid black;"><td>Fullname</td><td style="border: 3px solid black;">:</td>
             <td>
                 <form></form>
                     <input type="text" name="Fullname">
                 </form>
             </td></tr>
-        <tr><td>E-mail</td><td>:</td>
+        <tr style="border: 3px solid black;"><td>E-mail</td><td style="border: 3px solid black;">:</td>
             <td>
                 <form>
                     <input type="text" name="E-mail">
                 </form>
             </td></tr>
-        <tr><td>Agama</td><td>:</td>
+        <tr style="border: 3px solid black;"><td>Agama</td><td style="border: 3px solid black;">:</td>
             <td>
                 <select>
                     <option selected="Agama">--Pilih Agama--</option>
@@ -44,32 +44,31 @@
                     <option value="Konghucu">Konghucu</option>
                 </select>
             </td></tr>
-        <tr><td>Jenis kelamin</td><td>:</td>
+        <tr style="border: 3px solid black;"><td>Jenis kelamin</td><td style="border: 3px solid black;">:</td>
             <td>
                 <form>
                     <input type="radio" name="JenisKel" value="Pria" />Pria <input type="radio" name="JenisKel" value="Wanita" />Wanita
                 </form>
             </td></tr>
-            <tr><td>Hobi</td><td>:</td>
+            <tr style="border: 3px solid black;"><td>Hobi</td><td style="border: 3px solid black;">:</td>
                 <td>
                     <form>
-                    Musik :
                     <input type="checkbox" name="vehicle" value="Musik" />
+                    Musik :
                     Olahraga :
                     <input type="checkbox" name="vehicle" value="Olahraga" />
                     Gaming :
                     <input type="checkbox" name="vehicle" value="Gaming" />
                     Lainnya :
-                    <input type="checkbox" name="vehicle" value="Lainnya" />
                     </form>
             </td></tr>
-        <tr><td rowspan="3">Profil Singkat</td><td rowspan="3">:</td>
+        <tr style="border: 3px solid black;"><td>Profil Singkat</td><td style="border: 3px solid black;">:</td>
             <td>
                 <form>
-                    <textarea rows="3" cols="50" name="ProfilSingkat"></textarea>
+                    <textarea cols="50" name="ProfilSingkat"></textarea>
                 </form>
             </td></tr>
-            <tr><td align="right">
+            <tr style="border: 3px solid black;"><td colspan="3" class="submit-cell" align="right">
                 <form><input type="submit" name="submit" value="Input">
                 </form></td></tr>
     </table>
