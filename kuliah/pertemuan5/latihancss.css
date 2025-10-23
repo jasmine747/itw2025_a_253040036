@@ -1,0 +1,31 @@
+h1, h4 {color: rgb(204, 77, 166);
+        font-size: 50px;
+        font-family: "Bonbon", cursive; text-decoration: underline;
+        text-align: center;
+}
+
+    h4 {color: #abcabc;
+        font-size: 50px;
+        font-family: serif;
+        text-decoration: line-through;
+        letter-spacing: 20; text-align: center;
+    }
+    body {
+        height: 100vh;
+        background-image: url(/image.png);
+        background-repeat: repeat-x;
+        background-position: center;
+        background-size: contain;
+    }
+
+    a{
+        display block; 
+        width: 200px;
+        height: 80px;
+        background-position: center bottom;
+    }
+
+    a:hover {
+        background-position: top center;
+    }
+

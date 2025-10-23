@@ -1,0 +1,49 @@
+body {
+    font-family: Georgia;
+    height: 100vh;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-size: 300px 250px;
+    }
+
+    .link {
+		color:red;
+	}
+	.link:hover{
+		color:darkblue;
+	}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    font-size: 60px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+h4 {
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-align: center;
+    color: rgb(240, 177, 98);
+    line-height: 0%;
+}
+
+p.jarak-atas {
+    margin-top: 30px;
+}
+
+p span {
+    display: block;
+    color: black;
+    line-height: 0%;
+    margin-bottom: 30px;
+}
