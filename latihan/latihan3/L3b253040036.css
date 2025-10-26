@@ -1,14 +1,10 @@
 body {
     font-family: Georgia;
-    height: 100vh;
-    background-image: url(background.png);
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-size: 300px 250px;
-    }
+    background-color: aqua;
+}
 
     .link {
-		color:red;
+		color: white;
 	}
 	.link:hover{
 		color:darkblue;
@@ -23,11 +19,7 @@ h1 {
 
 h4 {
     font-style: italic;
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
+    text-align: right;
 }
 
 p {
