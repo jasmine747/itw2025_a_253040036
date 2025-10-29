@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .kotak-inline {
+            background-color: peachpuff;
+            width: 50px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: arial;
+            font-family: 10px;
+            padding: 3px 5px;
+            transition: 1s;
+        }
+        
+        .kotak-inline:hover {
+            background-color: brown;
+            color: white;
+            
+        }
+        .kotak1 {
+            background-color: aqua;
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+        }
+
+        .kotak2 {
+            width: 40px;
+            height: 40px;
+            background-color: salmon;
+            /* margin-left: 40px;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 30px; */
+            /* margin: 10px 20px 30px 40px; */
+            /* margin: 20px auto; */
+            /* margin-left: -30px;
+            transition: 2; */
+            margin-left: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 3px solid black;
+        }
+
+        /* .kotak2:hover {
+            margin-left: 0;
+        } */
+
+    </style>
+
+</head>
+<body>
+    <p class="kotak1">Kotak 1</p>
+    <p class="kotak2">Kotak 2</p>
+    <span href="#" class="kotak-inline">2</span>
+    <span href="#" class="kotak-inline">3</span>
+    <span href="#" class="kotak-inline">4</span>
+</body>
+</html> 

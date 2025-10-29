@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouting Dasar</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        h1 {
+            /* background-color: salmon; */
+        }
+
+        p {
+            /* background-color: aqua; */
+            display: inline; 
+        }
+        
+        a {
+            /* background-color: yellow; */
+        }
+
+        .main {
+    background-color: aqua;
+        }
+        
+        .nav {
+    background-color: orange;
+        }
+
+        .p2 {
+            font-size: 50px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .p2 span {
+            color: red;
+        }
+
+        .kotak-block{
+            background-color: pink;
+            width: 50%;
+            height: 100px;
+        }
+
+        .kotak-inline {
+            background-color: peachpuff;
+            width: 50px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: arial;
+            font-family: 10px;
+
+        }
+        
+        .kotak-inline:hover {
+            background-color: brown;
+            color: white;
+            
+        }
+
+        img {
+            width: 50px;
+        }
+
+        .pohon {
+            width: 50px;
+            filter: grayscale(100) blur(5px);
+            transition: 2s;
+        }
+
+        .pohon:hover {
+            filter: grayscale(0);
+        }
+
+        .info-penting {
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- pake div supaya ter block -->
+     <!-- span untuk perkata -->
+      <!-- %=berubah, px=tetap -->
+       <!-- overflow=auto(teksnya ke scroll),hidden(teksnya hilang), scroll(scrollnya ada ujungnya/kepotong) -->
+<!-- *= semua elemen di halaman jika nyoba di web -->
+
+    <div class="main">
+    <h1>Hello World</h1>
+    <p>Jasmine</p>
+    <p>I<span>T</span>W</p>
+    </div>
+    <div class="nav">
+
+    <!-- a=angker/jangkar perahu/link -->
+     <!-- karena diisi background color div maka linknya dibawah -->
+      
+    <a href="#">Informatika</a> 
+    <a href="#">UNPAS</a>
+    </div>
+
+    <div class="kotak-block">1</div>
+    <span href="#" class="kotak-inline">2</span>
+    <span href="#" class="kotak-inline">3</span>
+    <span href="#" class="kotak-inline">4</span>
+
+    <a href="https://google.com/"></a>
+ <img class="pohon" src="tree.png" alt="Pohon">
+
+ <p class="info-penting">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi earum natus dolores suscipit nostrum illo iusto labore cupiditate doloribus ratione et perspiciatis, voluptates, ut officiis est asperiores facere consequatur tempore.</p>
+
+</body>
+</html>
