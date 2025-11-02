@@ -11,6 +11,71 @@ p {
     "ELXP" 0;
 }
 
+.judul {
+  font-family: "Piedra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geprek {
+  font-family: "Piedra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card0 img {
+  width: 80%;      
+  height: auto;    
+  object-fit: cover; 
+  display: block;   
+  margin: 0 auto;   
+}
+
+.carousel0 {
+  margin: 70px auto;
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.carousel0 ::-webkit-scrollbar {
+  display: none;
+}
+
+.group0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 5s infinite linear;
+  padding-right: 1em;
+}
+
+.card0 {
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+  background: cornflowerblue;
+  font-size: 3rem;
+  border-radius: .2em;
+  text-align: center;
+  align-content: center;
+  overflow: hidden;
+  background: none;
+}
+
+.card0 img {
+  width: 100%;       
+  height: 100%;     
+  object-fit: cover;
+  display: block;
+}
+
+@Keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+
 .card {
   position: fixed;  
   top: 0;
@@ -74,6 +139,35 @@ p {
   transform: rotateY(0);
 }
 
+.card3 {
+  position: fixed;  
+  top: 0;
+  right: 0;        
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+.card3 .front3,
+.card3 .back3 {
+  position: absolute;   
+  top: 450px;
+  left: -55px;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  transition: transform 0.6s;
+}
+.card3 .back3 {
+  transform: rotateY(180deg);
+}
+.card3:hover .front3 {
+  transform: rotateY(180deg);
+}
+.card3:hover .back3 {
+  transform: rotateY(0);
+}
+
 body {
     line-height: 1;
 }
@@ -124,6 +218,7 @@ body {
     width: 800px;
     margin: auto;
     background-color: black;
+    border-radius: 15px;
 }
 
 .header {
@@ -142,24 +237,134 @@ body {
     margin-right: 5px;
 }
 
-.header a {
+.menu a {
+  position: relative;
+  display: inline-block;  
+  font-size: 1.1em;
+  font-weight: 500;
     text-decoration: none;
-    color: salmon;
-    padding: 3px;
+    color: #333;
+    padding: 6px 20px;
+    transition: .5s;
+    z-index: 0;
 }
 
-.header a:hover {
-    background-color: lightskyblue;
-    color: white;
+.menu a:hover {
+    color: #0ef;
 }
 
-.hero {
-    height: 280px;
-    background-image: url(hero.jpg);
-    background-size: cover;
-    background-position: 0 -180px;
-    border-bottom: 5px solid darkblue;
-    border-top: 5px solid red;
+.menu a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 2px solid #0ef;
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: .5s;
+}
+
+.menu a:hover span {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.her00o {
+  position: relative;
+  height: 300px;
+  bottom: 0px;
+  border-top: 5px solid aquamarine;
+  border-bottom: 5px solid darkblue;
+  overflow: hidden;
+}
+
+.oop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.card44 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card44 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s;
+  display: block;
+}
+
+.overlay00 {
+  position: absolute;
+  inset: 0;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s;
+  transform: scale(1.1);
+}
+
+.card44:hover img {
+  transform: scale(1.1);
+}
+
+.card44:hover .overlay00 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scroll-box {
+  width: 340px;
+  height: 420px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background: #1c2e4a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  background: #2a5af9;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;    
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+.item p {
+  margin: 10px 0;
+}
+
+.item:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
 }
 
 .content {
@@ -177,7 +382,7 @@ body {
 }
 
 .content .penulis a {
-    color: salmon;
+    color: lightyellow;
     text-decoration: none;
 }
 
