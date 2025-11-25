@@ -499,18 +499,23 @@ body {
 .next, .prev {
   width: 80px;
   height: 147px;
-  background-image: url('latihan5/panahkanan.png');
   position: absolute;
   text-indent: -9999px;
   top: 85%;
   /* margin-left: 50px; */
-  right: 560px;
+  right: 900px;
   opacity: 0;
+  top: 300px;
+}
+
+.next {
+  margin-right: -400px;
+  background-image: url('../latihan5/panahkanan.png');
 }
 
 .prev {
-  background-image: url('latihan5/panahkiri.png');
-  margin-left: -100px;
+  background-image: url('../latihan5/panahkiri.png');
+  margin-left: 800px;
 }
 
 /* animasi */
